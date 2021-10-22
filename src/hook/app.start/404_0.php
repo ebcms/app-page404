@@ -7,5 +7,5 @@ use Ebcms\RequestHandler;
 App::getInstance()->execute(function (
     RequestHandler $requestHandler
 ) {
-    $requestHandler->lazyMiddleware(Page404::class);
+    $requestHandler->lazyPrependMiddleware(Page404::class);
 });
